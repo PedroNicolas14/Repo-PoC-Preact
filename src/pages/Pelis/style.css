@@ -1,25 +1,16 @@
-div {
-	margin-bottom: 20px;
+div h1 {
+    margin: 15px;
+    text-align: center;
 }
-
-a img {
-	margin-top: 5vh;
-}
-
-.gallery img {
-	margin-top: 1vh;
-	margin-bottom: 1vh;
-}
-
 
 .home section {
 	margin-top: 5rem;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	column-gap: 1.5rem;
+	grid-template-rows: repeat(3, 1fr);
+	row-gap: 1.5rem;
 }
 
-.gallery {
+.titulo {
 	padding: 0.75rem 1.5rem;
 	border-radius: 0.5rem;
 	text-align: left;
@@ -27,10 +18,9 @@ a img {
 	color: #000000;
 	background-color: #f1f1f1;
 	border: 1px solid transparent;
-	min-width: 200px;
 }
 
-.gallery:hover {
+.titulo:hover {
 	border: 1px solid #ffffff;
 	box-shadow: 0 25px 50px -12px #673ab888;
 }
@@ -44,11 +34,11 @@ a img {
 }
 
 @media (prefers-color-scheme: dark) {
-	.gallery {
+	.titulo {
 		color: #ccc;
 		background-color: #202020;
 	}
-	.gallery:hover {
+	.titulo:hover {
 		border: 1px solid #673ab888;
 	}
 }

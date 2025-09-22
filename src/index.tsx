@@ -3,7 +3,7 @@ import { LocationProvider, Router, Route } from 'preact-iso';
 
 import { Header } from './components/Header.jsx';
 import { Home } from './pages/Home/index.jsx';
-import { NotFound } from './pages/_404.jsx';
+import { PelisVistas } from './pages/Pelis/pelisvistas.js';
 import './style.css';
 
 export function App() {
@@ -13,7 +13,7 @@ export function App() {
 			<main>
 				<Router>
 					<Route path="/" component={Home} />
-					<Route default component={NotFound} />
+					<Route default component={PelisVistas} />
 				</Router>
 			</main>
 		</LocationProvider>
