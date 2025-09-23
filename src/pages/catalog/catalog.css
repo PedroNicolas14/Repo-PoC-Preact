@@ -1,0 +1,141 @@
+div {
+  margin-bottom: 20px;
+}
+
+a img {
+  margin-top: 5vh;
+}
+
+.gallery img {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+
+.gallery-section {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.5rem;
+}
+
+.gallery {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  text-decoration: none;
+  color: #000000;
+  background-color: #f1f1f1;
+  border: 1px solid transparent;
+  min-width: 200px;
+}
+
+.gallery:hover {
+  border: 1px solid #ffffff;
+  box-shadow: 0 25px 50px -12px #673ab888;
+}
+
+@media (max-width: 639px) {
+  .gallery section {
+    margin-top: 5rem;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .gallery {
+    color: #ccc;
+    background-color: #202020;
+  }
+
+  .gallery:hover {
+    border: 1px solid #673ab888;
+  }
+}
+
+.progress-container {
+  width: 100%;
+  background: #ddd;
+  border-radius: 8px;
+  margin: 10px 0;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #4caf50;
+  transition: width 0.3s ease;
+}
+
+/* Fondo oscuro que cubre toda la pantalla */
+.movie-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  /* un poco más oscuro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.movie-detail {
+  background: #202020;
+  border: 2px solid #4caf50;
+  /* borde verde */
+  border-radius: 12px;
+  max-width: 300px;
+  width: 90%;
+  /* responsive */
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+  color: #ccc;
+  /* texto claro en dark mode */
+}
+
+/* Imagen de detalle */
+.movie-detail img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Botón de cerrar */
+.boton-volver {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.boton-volver:hover {
+  color: #e53935;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
