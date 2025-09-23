@@ -13,7 +13,7 @@ import "./style.css";
  * - "/catalog" (Catálogo de películas)
  */
 export function App() {
-  return (
+	return (
     <Router>
       <Home path="/" />
       <Catalog path="/catalog" />
