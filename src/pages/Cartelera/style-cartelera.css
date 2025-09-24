@@ -2,15 +2,10 @@ div {
 	margin-bottom: 20px;
 }
 
-a img {
-	margin-top: 5vh;
-}
-
 .gallery img {
 	margin-top: 1vh;
 	margin-bottom: 1vh;
 }
-
 
 .home section {
 	margin-top: 5rem;
@@ -32,8 +27,9 @@ a img {
 
 .gallery:hover {
 	border: 1px solid #ffffff;
-	box-shadow: 0 25px 50px -12px #673ab888;
+	box-shadow: 0 0 50px -12px #673ab888;
 }
+
 
 @media (max-width: 639px) {
 	.home section {

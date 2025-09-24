@@ -1,0 +1,18 @@
+.titulo {
+	padding: 0.75rem 1.5rem;
+	border-radius: 0.5rem;
+	font-size: 40px;
+	text-align: center;
+	text-decoration: none;
+	color: #f1f1f1;
+	background-color: #202020;
+	border: 1px solid transparent;
+	min-width: 200px;
+}
+
+.parrafo {
+	margin: auto;
+	width: 60%;
+	font-size: medium;
+	text-align: center;
+}

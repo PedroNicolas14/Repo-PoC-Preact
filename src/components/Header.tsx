@@ -7,6 +7,9 @@ export function Header() {
 		<header>
 			<nav>
 				<a href="/" class={url == '/' && 'active'}>
+					Home
+				</a>
+				<a href="/cartelera" class={url == '/cartelera' && 'active'}>
 					Cartelera
 				</a>
 				<a href="/pelis-vistas" class={url == '/pelis-vistas' && 'active'}>
