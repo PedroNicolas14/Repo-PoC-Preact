@@ -53,6 +53,27 @@ div h1 {
 	background-color: #099900;
 	border: 1px solid transparent;
 	min-width: 200px;
+	animation: vistaFadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes vistaFadeIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 #099900;
+	}
+
+	60% {
+		opacity: 1;
+		transform: scale(1.05);
+		box-shadow: 0 0 30px 5px #09990088;
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+		box-shadow: 0 0 0 0 #099900;
+	}
 }
 
 .novista {
@@ -64,9 +85,35 @@ div h1 {
 	background-color: #222222;
 	border: 1px solid transparent;
 	min-width: 200px;
+	animation: novistaFadeIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes novistaFadeIn {
+	0% {
+		opacity: 0;
+		transform: scale(0.98);
+		box-shadow: 0 0 0 0 #222222;
+	}
+
+	80% {
+		opacity: 1;
+		transform: scale(1.01);
+		box-shadow: 0 0 10px 2px #22222244;
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+		box-shadow: 0 0 0 0 #222222;
+	}
 }
 
 .vista:hover {
+	border: 1px solid #673ab888;
+	box-shadow: 0 0 60px -1px #673ab888;
+}
+
+.novista:hover {
 	border: 1px solid #673ab888;
 	box-shadow: 0 0 60px -1px #673ab888;
 }
